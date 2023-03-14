@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+body {
+  font-family: "Sen", sans-serif;
+  background-color: rgba(0, 112, 116, 0.5);
+}
+
+.signupwrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.signupwrapper h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  color: #043133;
+}
+
+.signupwrapper form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 530px;
+  gap: 36px;
+}
+
+.signupwrapper form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.signupwrapper form label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4d5959;
+  margin-bottom: 5px;
+}
+
+.signupwrapper form input {
+  width: 600px;
+  height: 65px;
+  background: #eff0f2;
+  border: none;
+  padding: 17px;
+  border-radius: 5px;
+}
+
+.signupwrapper form button {
+  width: 250px;
+  height: 50px;
+  border: none;
+  margin: auto;
+  font-weight: 500;
+  font-size: 26px;
+  color: #ffffff;
+  border-radius: 5px;
+  background: #007074;
+  margin-bottom: 20px;
+}
+
+.signupwrapper form p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4d5959;
+}
+
+.spanClass {
+  font-weight: 700;
+  color: #007074;
+}
