@@ -18,10 +18,6 @@ const Signup = () => {
       },
     });
     let data = await result.json();
-    console.log(data);
-    setName("");
-    setEmail("");
-    setPassword("");
     if (data) {
       navigate("/");
     }
