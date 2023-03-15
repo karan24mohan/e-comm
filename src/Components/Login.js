@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import "../Signup.css";
+import { useNavigate } from "react-router-dom";
 
-const Signup = () => {
-  const [name, setName] = useState("");
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  //We have added this navigation is useeffect - If in case user try to go on signup page via url so it won't allow user to navigate to signup page if user is signed in.
+  //We have added this navigation is useeffect - If in case user try to go on login page via url so it won't allow user to navigate to login page if user is signed in.
   useEffect(() => {
     const auth = localStorage.getItem("user");
     if (auth) {
@@ -17,10 +16,10 @@ const Signup = () => {
   });
 
   const handleSubmit = async () => {
-    console.log(name, email, password);
-    let result = await fetch("http://localhost:3200/signup", {
+    console.log(email, password);
+    let result = await fetch("http://localhost:3200/login", {
       method: "POST",
-      body: JSON.stringify({ name, email, password }),
+      body: JSON.stringify({ email, password }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -34,17 +33,6 @@ const Signup = () => {
     <div className="signupwrapper">
       <h1> Welcome to Jammy </h1>{" "}
       <form>
-        <div className="nameWrapper">
-          <label htmlFor="name"> Full Name </label>{" "}
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter full name"
-            autoComplete="off"
-            onChange={(e) => setName(e.target.value)}
-          />{" "}
-        </div>{" "}
         <div className="emailWrapper">
           <label htmlFor="email"> Email </label>{" "}
           <input
@@ -70,11 +58,11 @@ const Signup = () => {
         <div>
           <button type="button" onClick={handleSubmit}>
             {" "}
-            Create Account{" "}
+            Login{" "}
           </button>{" "}
           <p>
-            Already have an account ?{" "}
-            <span className="spanClass"> Log in </span>{" "}
+            <span className="spanClass"> Sign up | </span> If you don't have
+            account. ?{" "}
           </p>{" "}
         </div>{" "}
       </form>{" "}
@@ -82,4 +70,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;
