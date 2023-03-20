@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Signup.css";
 import Nav from "./Components/Nav";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer";

@@ -10,40 +10,41 @@ const Nav = () => {
   };
   return (
     <div>
-      <ul className="navbar">
-        <li>
-          {" "}
-          <Link to="/"> Home page </Link>{" "}
-        </li>{" "}
-        <li>
-          {" "}
-          <Link to="/add"> Add Product page </Link>{" "}
-        </li>{" "}
-        <li>
-          {" "}
-          <Link to="/update"> Update page </Link>{" "}
-        </li>{" "}
-        <li>
-          {" "}
-          <Link to="/profile"> Profile page </Link>{" "}
-        </li>{" "}
-        {auth ? (
+      {" "}
+      {auth ? (
+        <ul className="navbar">
+          <li>
+            {" "}
+            <Link to="/"> Home page </Link>{" "}
+          </li>{" "}
+          <li>
+            {" "}
+            <Link to="/add"> Add Product page </Link>{" "}
+          </li>{" "}
+          <li>
+            {" "}
+            <Link to="/update"> Update page </Link>{" "}
+          </li>{" "}
+          <li>
+            {" "}
+            <Link to="/profile"> Profile page </Link>{" "}
+          </li>{" "}
           <li>
             <Link to="/signup" onClick={logout}>
               Logout page{" "}
             </Link>{" "}
-          </li>
-        ) : (
-          <>
-            <li>
-              <Link to="/signup"> Sign up page </Link>{" "}
-            </li>{" "}
-            <li>
-              <Link to="/login"> Login page </Link>{" "}
-            </li>{" "}
-          </>
-        )}{" "}
-      </ul>{" "}
+          </li>{" "}
+        </ul>
+      ) : (
+        <ul className="navbar navbar-right">
+          <li>
+            <Link to="/signup"> Sign up page </Link>{" "}
+          </li>{" "}
+          <li>
+            <Link to="/login"> Login page </Link>{" "}
+          </li>{" "}
+        </ul>
+      )}{" "}
     </div>
   );
 };

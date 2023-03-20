@@ -18,7 +18,7 @@ const Signup = () => {
 
   const handleSubmit = async () => {
     console.log(name, email, password);
-    let result = await fetch("http://localhost:3200/signup", {
+    let result = await fetch("http://localhost:3640/signup", {
       method: "POST",
       body: JSON.stringify({ name, email, password }),
       headers: {
