@@ -19,7 +19,7 @@ const Nav = () => {
           </li>{" "}
           <li>
             {" "}
-            <Link to="/add"> Add Product page </Link>{" "}
+            <Link to="/addProduct"> Add Product page </Link>{" "}
           </li>{" "}
           <li>
             {" "}
