@@ -39,7 +39,7 @@ const UpdateProduct = () => {
 
   return (
     <>
-      <h2> Add Product Details </h2>{" "}
+      <h2> Update Product Details </h2>{" "}
       <div className="addProductWrapper">
         <form>
           <div className="productNameWrapper">
