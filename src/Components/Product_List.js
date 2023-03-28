@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../Product_List.css";
 
 const Product_List = () => {
@@ -53,6 +54,10 @@ const Product_List = () => {
                     >
                       Delete{" "}
                     </button>{" "}
+                    <Link to={`/update/${e._id}`}>
+                      {" "}
+                      <button> Update </button>{" "}
+                    </Link>{" "}
                   </td>{" "}
                 </tr>{" "}
               </>
