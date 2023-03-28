@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../Product_List.css";
 
-const Product_List = () => {
+const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -69,4 +69,4 @@ const Product_List = () => {
   );
 };
 
-export default Product_List;
+export default ProductList;
