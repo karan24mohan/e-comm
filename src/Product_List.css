@@ -1,3 +1,17 @@
+.productListWrapper {
+    text-align: center;
+}
+
+.productListWrapper input {
+    margin: 1rem;
+    width: 30%;
+    height: 2rem;
+    padding: 20px;
+    border-radius: 1rem;
+    border: 1px solid black;
+    outline: none;
+}
+
 .productListWrapper h1 {
     text-align: center;
     margin-top: 5%;
@@ -20,4 +34,15 @@ table tbody tr td {
     padding: 10px;
     font-size: 14px;
     border: 1px solid black;
+}
+
+table tbody {
+    text-align: center;
+}
+
+.noProductFound {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 12px;
+    text-align: center;
 }

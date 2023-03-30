@@ -17,7 +17,7 @@ const Login = () => {
 
   const handleSubmit = async () => {
     console.log(email, password);
-    let result = await fetch("http://localhost:4540/login", {
+    let result = await fetch("http://localhost:4900/login", {
       method: "POST",
       body: JSON.stringify({ email, password }),
       headers: {
